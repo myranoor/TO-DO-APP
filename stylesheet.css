@@ -1,0 +1,130 @@
+/* Base Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e0f7fa;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center the content vertically */
+    min-height: 100vh; /* Ensure the body takes full height of the viewport */
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #00796b;
+    font-size: 1.5em; /* Responsive font size */
+    margin-bottom: 20px;
+}
+
+.input-group {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em; /* Responsive font size */
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em; /* Responsive font size */
+}
+
+button:hover {
+    background-color: #004d40;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 10px;
+    background-color: #f1f8e9;
+    border: 1px solid #c8e6c9;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Ensure contents wrap on smaller screens */
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete-btn {
+    background-color: #f44336;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-btn:hover {
+    background-color: #d32f2f;
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    .container {
+        padding: 15px;
+        max-width: 100%; /* Allow the container to take full width on mobile */
+    }
+
+    h1 {
+        font-size: 1.2em; /* Smaller font size on mobile */
+    }
+
+    .input-group {
+        flex-direction: column; /* Stack input and button vertically */
+    }
+
+    input[type="text"],
+    button {
+        width: 100%; /* Full width input and button on mobile */
+        margin-bottom: 10px; /* Add space between input and button */
+    }
+
+    li {
+        flex-direction: column; /* Stack checkbox, text, and button vertically */
+        align-items: flex-start;
+    }
+
+    .delete-btn {
+        width: 100%; /* Full width delete button on mobile */
+        margin-left: 0;
+        margin-top: 10px; /* Add space between text and delete button */
+    }
+}

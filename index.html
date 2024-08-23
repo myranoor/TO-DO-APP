@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App with Habit Tracker</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List</h1>
+        <div class="input-group">
+            <input type="text" id="task-input" placeholder="Add a new task">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+        
+        <h1>Habit Tracker</h1>
+        <div class="input-group">
+            <input type="text" id="habit-input" placeholder="Add a new habit">
+            <button onclick="addHabit()">Add Habit</button>
+        </div>
+        <ul id="habit-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
